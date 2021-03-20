@@ -59,6 +59,10 @@ img {
   overflow: hidden;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -76,12 +80,23 @@ img {
 }
 
 .title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--dark-color);
 }
 
 .hero,
@@ -93,13 +108,14 @@ img {
 
 /* Шапка */
 
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  color: var(--dark-color);
+.header-container,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  margin-right: 93px;
 }
 
 .logo-text {
@@ -108,9 +124,25 @@ img {
 
 .header-items,
 .header-contacts {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-items .item {
+  margin-right: 50px;
+}
+
+.header-items .item:last-child {
+  margin-right: 0;
+}
+
+.header-items .link,
+.header-contacts .link {
+  display: block;
+  padding: 32px 0;
 }
 
 .header-items {
@@ -121,13 +153,25 @@ img {
   color: var(--accent-color);
 }
 
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* Герой */
 
+.hero-contants {
+  text-align: center;
+}
+
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-text-color);
@@ -152,17 +196,42 @@ img {
 
 /* Наши преимущества */
 
+.advantages {
+  padding-bottom: 0;
+}
+
 .advantages-items {
+  display: flex;
   line-height: 1.71;
 }
 
+.advantages-items .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-items .item {
+  min-width: 270px;
+}
+
 .advantage-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-color);
+}
+
+/* Чем мы занимаемся */
+
+.services-items {
+  display: flex;
+}
+
+.services-items .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Наша команда */
@@ -172,18 +241,34 @@ img {
 }
 
 .team-items {
+  display: flex;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
+.team-items .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-member {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+.team-text {
+  margin-bottom: 30px;
 }
 
 /* Подвал */
