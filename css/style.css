@@ -9,6 +9,7 @@
 }
 
 /* Глобальные стили */
+
 html {
   box-sizing: border-box;
 }
@@ -169,6 +170,10 @@ img {
 
 .hero-title {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% / 12 * 7);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -178,12 +183,18 @@ img {
 }
 
 .hero-btn {
+  padding: 10px 32px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+
+  border: 0;
+  border-radius: 4px;
+
   color: var(--light-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -274,31 +285,68 @@ img {
 /* Подвал */
 
 .logo-footer {
+  display: block;
+  padding-top: 60px;
+  margin-bottom: 20px;
   color: var(--light-text-color);
 }
 
 .footer-address {
+  margin-bottom: 9px;
   font-style: normal;
   line-height: 1.71;
   color: var(--light-text-color);
 }
 
+.address-text {
+  margin-bottom: 0;
+}
+
 .footer-contacts {
+  padding-bottom: 60px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-contacts .item:first-child {
+  padding-bottom: 9px;
+}
+
 /* Cтили для portfolio.html */
 
-/* Кнопки фильтра в портфолио */
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
+
+/* Меню навигации */
+
+.portfolio-container {
+  padding-top: 62px;
+  padding-bottom: 126px;
+}
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-nav .item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .portfolio-btn {
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  border: 0;
+  border-radius: 4px;
+
   color: var(--second-color);
   background-color: var(--light-bg-color);
 }
@@ -310,14 +358,33 @@ img {
   cursor: pointer;
 }
 
-/* Оглавление и текст в блоках портфолио */
+/* Карточки портфолио */
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
 
 .portfolio-item {
+  margin-top: 30px;
+  margin-left: 30px;
+
   font-size: 16px;
   line-height: 1.87;
 }
 
+.portfolio-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
 .portfolio-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
