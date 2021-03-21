@@ -164,6 +164,10 @@ img {
 
 /* Герой */
 
+.hero {
+  padding: 200px 0;
+}
+
 .hero-contants {
   text-align: center;
 }
@@ -263,8 +267,8 @@ img {
   margin-right: 30px;
 }
 
-.team-img {
-  margin-bottom: 30px;
+.team-info {
+  padding: 30px 0;
 }
 
 .team-member {
@@ -277,16 +281,19 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
-
 .team-text {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 /* Подвал */
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo-footer {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
   color: var(--light-text-color);
 }
@@ -303,7 +310,6 @@ img {
 }
 
 .footer-contacts {
-  padding-bottom: 60px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -319,11 +325,6 @@ img {
 }
 
 /* Меню навигации */
-
-.portfolio-container {
-  padding-top: 62px;
-  padding-bottom: 126px;
-}
 
 .portfolio-nav {
   display: flex;
@@ -390,4 +391,8 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-color);
+}
+
+.portfolio-text {
+  margin-bottom: 0;
 }
